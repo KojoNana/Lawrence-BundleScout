@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f3">
+  <meta name="description" content="Compare mobile data bundle prices from Ghana's major networks in one simple place.">
+  <title>Lawrence Bundlescout — Find your best data bundle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Lawrence Bundlescout home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 8.5 12 5l7 3.5v7L12 19l-7-3.5v-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-name">Lawrence <strong>Bundlescout</strong></span>
+      </a>
+      <div class="nav-links">
+        <a href="#compare">Compare bundles</a>
+        <a href="#partners">For businesses</a>
+        <a class="nav-cta" href="#compare">Find a bundle <span aria-hidden="true">→</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-layout">
+          <div class="hero-inner">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> A smarter way to stay connected</div>
+            <h1>Find your next<br><span>best bundle.</span></h1>
+            <p class="hero-copy">Compare data offers from Ghana’s networks side by side. See the price per gigabyte, check validity, and choose what fits your day.</p>
+            <form class="search" id="search-form" role="search">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <label for="bundle-search" class="sr-only">Search bundles</label>
+              <input id="bundle-search" type="search" placeholder="Try “MTN”, “10 GB” or a plan name" autocomplete="off">
+              <button type="submit">Search <span aria-hidden="true">→</span></button>
+            </form>
+            <div class="hero-actions">
+              <a class="hero-link" href="#compare">Explore all bundles <span aria-hidden="true">↓</span></a>
+              <span class="hero-note"><span class="note-check" aria-hidden="true">✓</span> Independent. Simple. Made for Ghana.</span>
+            </div>
+          </div>
+          <aside class="hero-preview" aria-label="Illustrative sample bundle comparison">
+            <div class="preview-top">
+              <div>
+                <p class="preview-label">A clearer view</p>
+                <h2>Compare at a glance</h2>
+              </div>
+              <span class="preview-icon" aria-hidden="true">↗</span>
+            </div>
+            <div class="preview-highlight">
+              <span class="preview-orb" aria-hidden="true">GH₵</span>
+              <div>
+                <p>Example price per GB</p>
+                <strong>GH₵3.00 <small>/ GB</small></strong>
+              </div>
+              <span class="preview-spark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <div class="preview-list" aria-hidden="true">
+              <div class="preview-row"><span class="preview-network mtn">M</span><span class="preview-row-name">MTN <small>5 GB · 7 days</small></span><strong>GH₵20</strong></div>
+              <div class="preview-row"><span class="preview-network telecel">T</span><span class="preview-row-name">Telecel <small>8 GB · 30 days</small></span><strong>GH₵30</strong></div>
+              <div class="preview-row"><span class="preview-network at">AT</span><span class="preview-row-name">AT <small>10 GB · 30 days</small></span><strong>GH₵30</strong></div>
+            </div>
+            <p class="preview-disclaimer"><span aria-hidden="true">ⓘ</span> Sample prices for illustration · check with your network</p>
+          </aside>
+        </div>
+        <div class="hero-stats" aria-label="About this comparison">
+          <div><strong>3</strong><span>networks in one place</span></div>
+          <div><strong>9</strong><span>sample bundles to explore</span></div>
+          <div><strong>GH₵</strong><span>prices shown upfront</span></div>
+          <p>Designed to make comparing feel effortless.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="compare-section" id="compare">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">The bundle board</p>
+            <h2>Find your best fit</h2>
+            <p class="section-subtitle">Compare price, data volume, and validity at a glance.</p>
+          </div>
+          <div class="demo-badge">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 2.8 19h18.4L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 9v4m0 3h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            Demo prices — verify with your network
+          </div>
+        </div>
+
+        <div class="filters">
+          <div class="network-filters" role="group" aria-label="Filter by network">
+            <span class="filter-label">Network</span>
+            <button class="filter-chip" type="button" data-network="all" aria-pressed="true">All networks</button>
+            <button class="filter-chip" type="button" data-network="MTN" aria-pressed="false">MTN</button>
+            <button class="filter-chip" type="button" data-network="Telecel" aria-pressed="false">Telecel</button>
+            <button class="filter-chip" type="button" data-network="AT" aria-pressed="false">AT</button>
+          </div>
+          <label class="sort-control" for="sort-select">Sort by
+            <select id="sort-select">
+              <option value="popular">Recommended</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="data-high">Most data</option>
+              <option value="value">Best value</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="results-meta">
+          <p class="results-count" id="results-count" aria-live="polite"></p>
+          <p class="freshness">Prices shown are illustrative sample data, not live offers.</p>
+        </div>
+        <div class="bundle-grid" id="bundle-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="how-section" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="how-heading">
+          <p class="section-kicker">Simple by design</p>
+          <h2 id="how-title">A better bundle in three steps.</h2>
+          <p>Less hopping between apps. More clarity before you buy.</p>
+        </div>
+        <div class="how-grid">
+          <article class="how-card">
+            <span class="how-number">01</span>
+            <span class="how-icon" aria-hidden="true">⌕</span>
+            <h3>Explore your options</h3>
+            <p>Browse bundles from MTN, Telecel, and AT together, without switching between network pages.</p>
+          </article>
+          <article class="how-card">
+            <span class="how-number">02</span>
+            <span class="how-icon" aria-hidden="true">↗</span>
+            <h3>Compare the value</h3>
+            <p>Check data size, validity, total cost, and the sample price per gigabyte side by side.</p>
+          </article>
+          <article class="how-card">
+            <span class="how-number">03</span>
+            <span class="how-icon" aria-hidden="true">✓</span>
+            <h3>Choose with confidence</h3>
+            <p>Find a plan that suits your needs, then confirm the current offer directly with your network.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-section" id="partners">
+      <div class="wrap">
+        <div class="partner-card">
+          <div>
+            <p class="section-kicker partner-kicker">For network partners</p>
+            <h2>Help customers find your best offers.</h2>
+            <p>BundleScout is built to connect people with useful plans. Partner placements and referral opportunities are part of the roadmap.</p>
+          </div>
+          <a class="partner-cta" href="mailto:hello@bundlescout.example?subject=BundleScout%20partnership">Explore partnership <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="#" aria-label="Lawrence Bundlescout home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 8.5 12 5l7 3.5v7L12 19l-7-3.5v-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-name">Lawrence <strong>Bundlescout</strong></span>
+        </a>
+        <p>© <span id="current-year">2026</span> Lawrence Bundlescout · Made for Ghana</p>
+        <a class="email-link" href="mailto:kojon8944@gmail.com">
+          <span class="contact-icon email-icon" aria-hidden="true">✉</span>
+          <span>kojon8944@gmail.com</span>
+        </a>
+      </div>
+      <div class="footer-connect">
+        <p class="footer-label">Let’s connect</p>
+        <div class="social-links" aria-label="Social media and contact links">
+          <a class="social-link whatsapp-link" href="https://wa.me/233531114197" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp: +233 53 111 4197">
+            <span class="contact-icon" aria-hidden="true">W</span><span><strong>WhatsApp</strong><small>+233 53 111 4197</small></span>
+          </a>
+          <a class="social-link instagram-link" href="https://www.instagram.com/nanafosu_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram: nanafosu_">
+            <span class="contact-icon" aria-hidden="true">◎</span><span><strong>Instagram</strong><small>@nanafosu_</small></span>
+          </a>
+          <a class="social-link snapchat-link" href="https://www.snapchat.com/add/n9na_kojo" target="_blank" rel="noopener noreferrer" aria-label="Snapchat: n9na_kojo">
+            <span class="contact-icon" aria-hidden="true">S</span><span><strong>Snapchat</strong><small>n9na_kojo</small></span>
+          </a>
+          <a class="social-link telegram-link" href="https://t.me/n9na_kojo" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @n9na_kojo">
+            <span class="contact-icon" aria-hidden="true">➤</span><span><strong>Telegram</strong><small>@n9na_kojo</small></span>
+          </a>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#compare">Compare bundles</a>
+          <a href="#partners">Partner with us</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="bundle-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-content">
+      <div class="dialog-heading">
+        <div>
+          <h2 id="dialog-title">Bundle details</h2>
+          <p id="dialog-subtitle"></p>
+        </div>
+        <button class="close-dialog" type="button" aria-label="Close details">✕</button>
+      </div>
+      <div class="detail-list" id="detail-list"></div>
+      <div class="dialog-note">This is illustrative sample information for the prototype. Confirm current prices, availability, and terms directly with the network before purchasing.</div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
